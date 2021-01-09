@@ -33,13 +33,10 @@ const queryParams = () => {
 }
 
 program
-  .version('0.0.1')
-  .description("An example CLI for ordering pizza's")
-  .option('-p, --peppers', 'Add peppers')
-  .option('-P, --pineapple', 'Add pineapple')
-  .option('-b, --bbq', 'Add bbq sauce')
-  .option('-c, --cheese <type>', 'Add the specified type of cheese [marble]')
-  .option('-C, --no-cheese', 'You do not want any cheese')
+  .version('1.0.0')
+  .description('Konflu-cli give you Martial Arts for Confluence')
+  .option('-p, --parent', 'Parent ID')
+  .option('-c, --pages', 'List of pages IDs')
   .parse(process.argv)
 
 const run = async () => {
@@ -66,7 +63,7 @@ const run = async () => {
       getPage()
       break
     case 'Add Label':
-      // get the content of a page from Confluence
+      // add a new label to a Confluence page
       addLabel()
       break
     case 'Delete Pages':
