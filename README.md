@@ -1,4 +1,4 @@
-[<div style="text-align:center"><img  src="docs/.vuepress/public/whispr_logo_charcoal_back.svg" height=300></div>](<(https://sanofi-iadc.github.io/whispr/)>)
+[<div style="text-align:center"><img src="https://raw.githubusercontent.com/Sanofi-IADC/konflu-cli/master/konflu-cli.png" height=225></div>](<(https://sanofi-iadc.github.io/konflu-cli/)>)
 
 # Introduction
 
