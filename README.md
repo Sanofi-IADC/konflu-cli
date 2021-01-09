@@ -14,23 +14,34 @@ While this is just the begining we encourage you to contribute to increase the n
 # Features
 
 [X] Parameters retrieved by interactive questions (via [Inquirer.js](https://github.com/SBoudrias/Inquirer.js))
+
 [ ] Parameters via command line options
+
 [X] Login to Confluence API as defaults
+
 [X] Copy Page Hierarchy
+
 [ ] Copy Permissions
+
 [X] Add Label
+
 [X] Delete Pages
+
 [X] Delete Children
+
 [ ] Plugin system
+
 
 # Install
 
 TODO
+
 So for just clone the repo and run the scripts in the package.json
 
 # Usage
 
 TODO
+
 
 # Tech stack
 
