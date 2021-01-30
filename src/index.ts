@@ -32,12 +32,12 @@ const queryParams = () => {
   return inquirer.prompt(qs)
 }
 
-program
-  .version('1.0.0')
-  .description('Konflu-cli give you Martial Arts for Confluence')
-  .option('-p, --parent', 'Parent ID')
-  .option('-c, --pages', 'List of pages IDs')
-  .parse(process.argv)
+// program
+//   .version('1.0.0')
+//   .description('Konflu-cli give you Martial Arts for Confluence')
+//   .option('-p, --parent', 'Parent ID')
+//   .option('-c, --pages', 'List of pages IDs')
+//   .parse(process.argv)
 
 const run = async () => {
   clear()
