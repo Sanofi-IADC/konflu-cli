@@ -59,16 +59,19 @@ class ConfluenceClient {
 
   async getPageContent(pageId: string): Promise<any> {
     try {
-      const res = await this.axiosCli.get(`/rest/api/content/${pageId}`, {
-        params: {
-          expand: [
-            // fields to retrieve
-            'body.styled_view',
-            'metadata.labels',
-            'version,history',
-          ].join(','),
-        },
-      })
+      const res = await this.axiosCli.get(`/api/v2/pages/${pageId}`,
+      { params: { 'body-format': 'storage' } })
+      return res.data
+    } catch (err) {
+      console.error(err)
+      return undefined
+    }
+  }
+
+
+  async createPageContent(bodyData: any): Promise<any> {
+    try {
+      const res = await this.axiosCli.post(`/api/v2/pages`, bodyData)
       return res.data
     } catch (err) {
       console.error(err)
